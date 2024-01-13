@@ -1,0 +1,21 @@
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+
+const myComponent = () => {
+  return (
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#">Your Brand</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link href="#">Home</Nav.Link>
+            {/* Add more navigation links */}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+
+export default myComponent;
